@@ -1,0 +1,14 @@
+{
+  "playas": [
+    {
+      "id": 1,
+      "nombre": "Isla de Coche",
+      "estado": "Nueva Esparta"
+    },
+    {
+      "id": 2,
+      "nombre": "Cayo sombrero",
+      "estado": "Falcón"
+    }
+  ]
+}

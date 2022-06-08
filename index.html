@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+   <!-- CHARSET -->
+   <meta charset="UTF-8">
+   <!-- IE-EDGE -->
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <!-- VIEWPORT -->
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- DESCRIPTION -->
+   <meta name="description" content="CRUD CON AXIOS">
+   <!-- AUTHOR -->
+   <meta name="author" content="Daniel Salinas">
+   <!-- TITTLE -->
+   <title>Daniel Salinas | CRUD CON AXIOS</title>
+   <!-- STYLES -->
+   <link rel="stylesheet" href="./css/styles.css">
+<body>
+
+  <h1>CRUD LOCAL CON AXIOS</h1>
+
+  <section class="crud">
+    <article>
+      <h2 class="crud-title">AGREGAR NUEVA PLAYA</h2>
+      <form class="crud-form">
+        <input class="input_label" type="text" name="nombre" placeholder="Nombre de la playa" required>
+        <input class="input_label" type="text" name="estado" placeholder="Nombre del estado" required>
+        <input class="input_submit" type="submit" value="GUARDAR">
+        <input type="hidden" name="id">
+      </form>
+    </article>
+
+    <article class="data-request">
+      <table class="crud-table">
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Estado</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </article>
+  </section>
+
+  <template id="crud-template">
+    <tr>
+      <td class="name"></td>
+      <td class="estado"></td>
+      <td>
+        <button class="edit">Editar</button>
+        <button class="delete">Eliminar</button>
+      </td>
+    </tr>
+  </template>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+</html>
